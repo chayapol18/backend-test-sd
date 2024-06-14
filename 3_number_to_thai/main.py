@@ -41,7 +41,7 @@ class Solution:
                     result = 'ยี่' + thai_units[i % 8] + result
                 elif (nums[i] == 1 and i == 1) or (nums[i] == 1 and i == 7):
                     result = thai_units[i % 8] + result
-                elif nums[i] == 1 and i == 0:
+                elif nums[i] == 1 and i == 0 and len(nums) > 1:
                     result = 'เอ็ด'
                 else:
                     result = thai_numbers[nums[i]] + thai_units[i % 8] + result
